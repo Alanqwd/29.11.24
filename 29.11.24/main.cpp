@@ -41,6 +41,17 @@ int main() {
 		std::cout << el.var << ' ';
 
 	}
+	 
+	std::sort(arrays.begin(), arrays.end(),
+		[](const MyNum& first, const MyNum& second) {return first.var < second.var; }
+	);
+
+	std::cout << "\n";
+	for (auto& el : arrays)
+	{
+		std::cout << el.var << ' ';
+
+	}
 
 	return 0;
 }
